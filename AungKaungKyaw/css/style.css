@@ -1423,7 +1423,7 @@ body.offcanvas .colorlib-nav-toggle {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #000;
+  background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;

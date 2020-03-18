@@ -103,12 +103,22 @@ a.bck.active {
 }
 
 .subproject img{
-  height: 300px;
-  width: 450px;
+  height: 250px;
+  width: 380px;
   position: relative;
   object-fit: cover;
-  margin-left: 15px;
+  margin-left: 30px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .subproject img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
 }
 .subproject img:hover{
   opacity: 0.7;
@@ -120,7 +130,7 @@ a.bck.active {
   display: none;
 }
 .web{
-  background: #E3E5E5;
+  background: rgba(0, 0, 0, 0.7);
 }
 .owl-nav{
   display: none;
@@ -179,6 +189,13 @@ a.bck.active {
   max-width: 1100px;
   height: 700px;
 }
+@media screen and (max-width: 768px) {
+  .viewimg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
 
 /* Caption of Modal Image */
 
@@ -193,6 +210,9 @@ a.bck.active {
 @keyframes zoom {
   from {transform:scale(0)} 
   to {transform:scale(1)}
+}
+.web h4{
+  color: white;
 }
 
 /* The Close Button */
