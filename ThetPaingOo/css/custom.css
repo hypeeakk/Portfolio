@@ -129,8 +129,14 @@ a.bck.active {
 .ux-hidden{
   display: none;
 }
+.illu-hidden {
+  display: none;
+}
+.ui-hidden{
+  display: none;
+}
 .web{
-  background: rgba(0, 0, 0, 0.7);
+  background: white;
 }
 .owl-nav{
   display: none;
@@ -186,13 +192,13 @@ a.bck.active {
 .viewimg {
   margin: auto;
   display: block;
-  width: 80%;
+  width: auto;
   max-width: 1100px;
   height: 700px;
 }
 @media screen and (max-width: 768px) {
   .viewimg {
-    width: 100%;
+    width: auto;
     height: auto;
     object-fit: cover;
   }
@@ -251,6 +257,42 @@ a.bck.active {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.illuclose2, .illuclose3, .illuclose4, .illuclose5, .illuclose6, .illuclose7, .illuclose8, .illuclose9, .illuclose10, .illuclose11, .illuclose12, .illuclose13 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.illuclose2, .illuclose3, .illuclose4, .illuclose5, .illuclose6, .illuclose7, .illuclose8, .illuclose9, .illuclose10, .illuclose11, .illuclose12, .illuclose13:hover,
+.illuclose2, .illuclose3, .illuclose4, .illuclose5, .illuclose6, .illuclose7, .illuclose8, .illuclose9, .illuclose10, .illuclose11, .illuclose12, .illuclose13:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.uiclose2, .uiclose3, .uiclose4, .uiclose5, .uiclose6, .uiclose7, .uiclose8, .uiclose9, .uiclose10, .uiclose11, .uiclose12, .uiclose13 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.uiclose2, .uiclose3, .uiclose4, .uiclose5, .uiclose6, .uiclose7, .uiclose8, .uiclose9, .uiclose10, .uiclose11, .uiclose12, .uiclose13:hover,
+.uiclose2, .uiclose3, .uiclose4, .uiclose5, .uiclose6, .uiclose7, .uiclose8, .uiclose9, .uiclose10, .uiclose11, .uiclose12, .uiclose13:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){

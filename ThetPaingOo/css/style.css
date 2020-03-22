@@ -1026,6 +1026,7 @@ body.offcanvas {
         @media screen and (max-width: 768px) {
           .blog-entry {
             margin-bottom: 3em;
+            margin: 0px;
           }
           .feedback img{
             width: 50px;
