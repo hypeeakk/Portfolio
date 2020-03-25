@@ -1319,6 +1319,12 @@ body.offcanvas .colorlib-nav-toggle {
 .feedback p{
   margin-top: 50px;
 }
+@media screen and (max-width: 400px) {
+  .blog-entry{
+    margin-left: 20px;
+    width: 300px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .blog-entry {

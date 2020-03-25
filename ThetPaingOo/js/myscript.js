@@ -57,6 +57,20 @@
             });
         });
 
+        $(function () {
+            $(".web-hidden").slice(0, 6).show();
+            $("#loadMoreWebsite").on('click', function (e) {
+                e.preventDefault();
+                $(".web-hidden:hidden").slice(0, 2).slideDown();
+                if ($(".web-hidden:hidden").length == 0) {
+                    $("#load").fadeOut('slow');
+                }
+                $('html,body').animate({
+                    scrollTop: $(this).offset().top
+                }, 1500);
+            });
+        });
+
         $('.owl-carousel').owlCarousel({
             
             autoplayTimeout: 3000,

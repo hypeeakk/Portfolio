@@ -577,9 +577,9 @@ span.onclick = function() {
   uimodal.style.display = "none";
 }
 
-var uimodal = document.getElementById("uiModal03");
+var uimodal = document.getElementById("uiModal04");
 var img = document.getElementById("myImg32");
-var uimodalImg = document.getElementById("uiimg03");
+var uimodalImg = document.getElementById("uiimg04");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   uimodal.style.display = "block";
@@ -596,9 +596,9 @@ span.onclick = function() {
 }
 
 
-var uimodal = document.getElementById("uiModal04");
+var uimodal = document.getElementById("uiModal05");
 var img = document.getElementById("myImg33");
-var uimodalImg = document.getElementById("uiimg04");
+var uimodalImg = document.getElementById("uiimg05");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   uimodal.style.display = "block";
@@ -615,9 +615,9 @@ span.onclick = function() {
 }
 
 
-var uimodal = document.getElementById("uiModal05");
+var uimodal = document.getElementById("uiModal06");
 var img = document.getElementById("myImg34");
-var uimodalImg = document.getElementById("uiimg05");
+var uimodalImg = document.getElementById("uiimg06");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   uimodal.style.display = "block";
@@ -634,9 +634,9 @@ span.onclick = function() {
 }
 
 
-var uimodal = document.getElementById("uiModal06");
+var uimodal = document.getElementById("uiModal07");
 var img = document.getElementById("myImg35");
-var uimodalImg = document.getElementById("uiimg06");
+var uimodalImg = document.getElementById("uiimg07");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   uimodal.style.display = "block";
@@ -652,9 +652,9 @@ span.onclick = function() {
   uimodal.style.display = "none";
 }
 
-var uimodal = document.getElementById("uiModal07");
+var uimodal = document.getElementById("uiModal08");
 var img = document.getElementById("myImg36");
-var uimodalImg = document.getElementById("uiimg07");
+var uimodalImg = document.getElementById("uiimg08");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   uimodal.style.display = "block";
@@ -671,9 +671,9 @@ span.onclick = function() {
 }
 
 
-var uimodal = document.getElementById("uiModal08");
+var uimodal = document.getElementById("uiModal09");
 var img = document.getElementById("myImg37");
-var uimodalImg = document.getElementById("uiimg08");
+var uimodalImg = document.getElementById("uiimg09");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   uimodal.style.display = "block";
@@ -690,9 +690,9 @@ span.onclick = function() {
 }
 
 
-var uimodal = document.getElementById("uiModal09");
+var uimodal = document.getElementById("uiModal10");
 var img = document.getElementById("myImg38");
-var uimodalImg = document.getElementById("uiimg09");
+var uimodalImg = document.getElementById("uiimg10");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   uimodal.style.display = "block";
@@ -709,23 +709,77 @@ span.onclick = function() {
 }
 
 
-var uimodal = document.getElementById("uiModal10");
+
+
+
+
+// Website 
+var wbmodal = document.getElementById("wbModal01");
 var img = document.getElementById("myImg39");
-var uimodalImg = document.getElementById("uiimg10");
+var wbmodalImg = document.getElementById("wbimg01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
-  uimodal.style.display = "block";
-  uimodalImg.src = this.src;
+  wbmodal.style.display = "block";
+  wbmodalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
 
+var span = document.getElementsByClassName("websiteclose2")[0];
 
-var span = document.getElementsByClassName("uiclose11")[0];
-
-
-span.onclick = function() { 
-  uimodal.style.display = "none";
+span.onclick = function() {
+  wbmodal.style.display = "none";
 }
+
+var wbmodal = document.getElementById("wbModal02");
+var img = document.getElementById("myImg42");
+var wbmodalImg = document.getElementById("wbimg02");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  wbmodal.style.display = "block";
+  wbmodalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("websiteclose3")[0];
+
+span.onclick = function() {
+  wbmodal.style.display = "none";
+}
+
+
+var wbmodal = document.getElementById("wbModal03");
+var img = document.getElementById("myImg43");
+var wbmodalImg = document.getElementById("wbimg03");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  wbmodal.style.display = "block";
+  wbmodalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("websiteclose4")[0];
+
+span.onclick = function() {
+  wbmodal.style.display = "none";
+}
+
+
+var wbmodal = document.getElementById("wbModal04");
+var img = document.getElementById("myImg44");
+var wbmodalImg = document.getElementById("wbimg04");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  wbmodal.style.display = "block";
+  wbmodalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("websiteclose5")[0];
+
+span.onclick = function() {
+  wbmodal.style.display = "none";
+}
+
 
 
 

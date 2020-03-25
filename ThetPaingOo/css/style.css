@@ -1020,7 +1020,12 @@ body.offcanvas {
           margin-top: 50px;
         }
         .feedback h2{
+          margin-top: 20px;
           color: #085dfa;
+        }
+        .owl-carousel .owl-item img{
+          border-radius: 50%;
+          margin-top: 100px;
         }
         
         @media screen and (max-width: 768px) {
@@ -1034,7 +1039,7 @@ body.offcanvas {
           .owl-carousel .owl-item img{
             width: 100px;
             height: 100px;
-            margin-left: 100px;
+            margin-left: 127px;
             object-fit: cover;
           }
         }
@@ -1125,7 +1130,7 @@ body.offcanvas {
     bottom: 0;
     left: 0;
     right: 0;
-  
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
