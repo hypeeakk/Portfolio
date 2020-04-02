@@ -1025,6 +1025,8 @@ body.offcanvas {
         }
         .owl-carousel .owl-item img{
           border-radius: 50%;
+          height: 100px;
+          object-fit: cover;
           margin-top: 100px;
         }
         

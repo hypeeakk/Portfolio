@@ -65,7 +65,7 @@ a.bck.active {
   text-align: center;
   background: #f9bf3f;
   color: #fff;
-  border: 1px solid;
+  border: 0px;
   box-shadow: 10px;
   border-radius: 20px;
   border-style: solid;
@@ -120,8 +120,12 @@ a.bck.active {
   display: none;
 }
 .web{
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
 }
+.web h4{
+  color: red;
+}
+
 .owl-nav{
   display: none;
 }
@@ -198,6 +202,9 @@ a.bck.active {
 }
 .web h4{
   color: white;
+}
+.close:hover{
+  opacity: 4;
 }
 
 /* The Close Button */
