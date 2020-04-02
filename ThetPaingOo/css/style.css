@@ -1038,6 +1038,9 @@ body.offcanvas {
           .feedback img{
             width: 50px;
           }
+          .feedback p{
+            margin-left: 20px;
+          }
           .owl-carousel .owl-item img{
             width: 100px;
             height: 100px;
