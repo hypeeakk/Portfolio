@@ -84,12 +84,8 @@ a.bck.active {
     to(#2fa499),
     color-stop(0.6, #54de5d));
   color: #fff;
-  border: 1px solid;
-  box-shadow: 10px;
+  border: 0px;
   border-radius: 20px;
-  border-style: solid;
-  border-color: #fff;
-  box-shadow: 0 1px 1px #ccc;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -130,7 +126,7 @@ a.bck.active {
   display: none;
 }
 .web{
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
 }
 .owl-nav{
   display: none;

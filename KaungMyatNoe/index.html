@@ -29,6 +29,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/custom.css">
 
 
 
@@ -44,11 +45,19 @@
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/custom.css">
+
+	<link rel="stylesheet" href="fonts/icomoon2/style.css">
+
+
+	<!-- modal  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -118,7 +127,7 @@
 														</span>
 													</h1>
 													<h2>"Engineered for excellence"</a></h2>
-													<p><a class="btn btn-primary btn-learn">Download CV <i
+													<p><a class="btn btn-primary btn-learn" href="images/Shine_Wanna_Aung_CV (4).pdf" download target="_blank">Download CV <i
 																class="icon-download4"></i></a></p>
 												</div>
 											</div>
@@ -683,11 +692,11 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" data-toggle="modal" data-target="#graphicModal"
-									style="background-image: url(images/Graphic/Poster.jpg);  background-color: rgba(0,0, 0, 0.5);">
+								<div class="project" data-toggle="modal" data-target="#webModal"
+									style="background-image: url(images/mbapp.jpeg);  background-color: rgba(0,0, 0, 0.5);">
 									<div class="desc">
 										<div class="con">
-											<h3 style="margin-top: 50px;"><a href="#">Graphic Design</a></h3>
+											<h3 style="margin-top: 50px;"><a href="#">Mobile Application</a></h3>
 
 											<p class="icon">
 												<span><a href="#"><i class="icon-share3"></i></a></span>
@@ -700,75 +709,46 @@
 							</div>
 
 							<!-- Modal1 -->
-							<div class="modal fade" id="graphicModal" role="dialog">
-								<div class="modal-dialog">
-
-									<!-- Modal content-->
-									<div class="modal-content" style="width: 100%;">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Modal Header</h4>
-										</div>
-										<div class="modal-body">
-											<div>
-												<h1>hello</h1>
-												<h1>hello</h1>
-												<h1>hello</h1>
-												<h1>hello</h1>
-												<h1>hello</h1>
-												<h1>hello</h1>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" data-toggle="modal" data-target="#webModal"
-									style="background-image: url(images/Logo/comx2.png);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Work 02</a></h3>
-											<span>Animation</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
 							<div class="modal fade" id="webModal" role="dialog">
-								<div class="modal-dialog" style="width: 100%;">
+								<div class="modal-dialog" style="width: 95%;">
 
 									<!-- Modal content-->
 									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Graphic Design</h4>
+										<div class="modal-header web" style="border: 0px;">
+											<button type="button" class="close" style="font-size: 40px; color: white; opacity: 10;" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title text-center" style="color: white; font-size: 30px;">Mobile Application</h4>
 										</div>
-										<div class="modal-body">
+										<div class="modal-body web">
 											<div class="row">
-												<h1 class="text-center">Illustrator</h1>
+
 												<div class="col-md-4">
 													<div class="subproject box-hidden">
-														<img src="images/img-2.jpg" alt="">
+														<img id="myImg" src="images/Waloan/Screenshot_20191113-003504 (1).jpg" alt="">
 													</div>
+												</div>
+												<div id="imgModal" class="modal modalimg">
+													<span class="close2">&times;</span>
+													<img class="modal-content viewimg" id="img01">
 												</div>
 												<div class="col-md-4">
 													<div class="subproject box-hidden">
-														<img src="images/img-2.jpg" alt="">
+														<img id="myImg2" src="images/Waloan/Screenshot_20191113-003504.jpg" alt="">
 													</div>
+												</div>
+												<div id="imgModal2" class="modal modalimg">
+													<span class="close3">&times;</span>
+													<img class="modal-content viewimg" id="img02">
+
 												</div>
 												<div class="col-md-4">
 													<div class="subproject box-hidden">
-														<img src="images/img-2.jpg" alt="">
+														<img id="myImg3" src="images/Waloan/Screenshot_20191113-003507.jpg" alt="">
 													</div>
+												</div>
+												<div id="imgModal3" class="modal modalimg">
+													<span class="close4">&times;</span>
+													<img class="modal-content viewimg" id="img03">
+
 												</div>
 
 											</div>
@@ -776,47 +756,104 @@
 
 												<div class="col-md-4">
 													<div class="subproject box-hidden">
-														<img src="images/img-2.jpg" alt="">
+														<img id="myImg4" src="images/Waloan/Screenshot_20191113-003510.jpg" alt="">
 													</div>
+												</div>
+												<div id="imgModal4" class="modal modalimg">
+													<span class="close5">&times;</span>
+													<img class="modal-content viewimg" id="img04">
+
 												</div>
 												<div class="col-md-4">
 													<div class="subproject box-hidden">
-														<img src="images/img-2.jpg" alt="">
+														<img id="myImg5" src="images/Waloan/Screenshot_20191113-003520.jpg" alt="">
 													</div>
+												</div>
+												<div id="imgModal5" class="modal modalimg">
+													<span class="close6">&times;</span>
+													<img class="modal-content viewimg" id="img05">
+
 												</div>
 												<div class="col-md-4">
 													<div class="subproject box-hidden">
-														<img src="images/img-2.jpg" alt="">
+														<img id="myImg6" src="images/Municiple/87959643_845607612568243_7282125434144161792_n.png" alt="">
 													</div>
+												</div>
+												<div id="imgModal6" class="modal modalimg">
+													<span class="close7">&times;</span>
+													<img class="modal-content viewimg" id="img06">
+
 												</div>
 
+											</div>
+											<div class="row">
+
+												<div class="col-md-4">
+													<div class="subproject box-hidden">
+														<img id="myImg7" src="images/Municiple/88173981_505812673450374_684405942015492096_n.png" alt="">
+													</div>
+												</div>
+												<div id="imgModal7" class="modal modalimg">
+													<span class="close8">&times;</span>
+													<img class="modal-content viewimg" id="img07">
+												</div>
+												<div class="col-md-4">
+													<div class="subproject box-hidden">
+														<img id="myImg8" src="images/Municiple/88191373_646508712826714_4247529635618750464_n.png" alt="">
+													</div>
+												</div>
+												<div id="imgModal8" class="modal modalimg">
+													<span class="close9">&times;</span>
+													<img class="modal-content viewimg" id="img08">
+												</div>
+												<div class="col-md-4">
+													<div class="subproject box-hidden">
+														<img id="myImg9" src="images/Max/88099512_1236712400053214_3261063960845090816_n.png" alt="">
+													</div>
+												</div>
+												<div id="imgModal9" class="modal modalimg">
+													<span class="close10">&times;</span>
+													<img class="modal-content viewimg" id="img09">
+												</div>
+
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="subproject box-hidden">
+														<img id="myImg10" src="images/Max/88180690_565115350758206_6827381293345406976_n.png" alt="">
+													</div>
+												</div>
+												<div id="imgModal10" class="modal modalimg">
+													<span class="close11">&times;</span>
+													<img class="modal-content viewimg" id="img10">
+												</div>
+												<div class="col-md-4">
+													<div class="subproject box-hidden">
+														<img id="myImg11" src="images/Max/89381405_846850429124194_1621569635658760192_n.png" alt="">
+													</div>
+												</div>
+												<div id="imgModal11" class="modal modalimg">
+													<span class="close12">&times;</span>
+													<img class="modal-content viewimg" id="img11">
+												</div>
+												<div class="col-md-4">
+													<div class="subproject box-hidden">
+														<img id="myImg12" src="images/Max/Screenshot_20200305-155106.jpg" alt="">
+													</div>
+												</div>
+												<div id="imgModal12" class="modal modalimg">
+													<span class="close13">&times;</span>
+													<img class="modal-content viewimg" id="img12">
+												</div>
 											</div>
 											<div class="text-center">
-												<a href="#" id="loadMore">Load More</a>
+												<a href="#" class="load" id="loadMore">Load More</a>
 											</div>
-											<hr>
-											<div class="row">
-												<h1 class="text-center">Web Design</h1>
-												<div class="col-md-4">
-													<div class="subproject">
-														<img src="images/img-2.jpg" alt="">
-													</div>
-												</div>
-												<div class="col-md-4">
-													<div class="subproject">
-														<img src="images/img-2.jpg" alt="">
-													</div>
-												</div>
-												<div class="col-md-4">
-													<div class="subproject">
-														<img src="images/img-2.jpg" alt="">
-													</div>
-												</div>
+											
 
-											</div>
 										</div>
 
-										<div class="modal-footer">
+										<div class="modal-footer web" style="border: 0px;">
 											<button type="button" class="btn btn-default"
 												data-dismiss="modal">Close</button>
 										</div>
@@ -824,74 +861,10 @@
 
 								</div>
 							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-								<div class="project" style="background-image: url(images/img-3.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Work 03</a></h3>
-											<span>Illustration</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-								<div class="project" style="background-image: url(images/img-4.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Work 04</a></h3>
-											<span>Application</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/img-5.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Work 05</a></h3>
-											<span>Graphic, Logo</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(images/img-6.jpg);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="work.html">Work 06</a></h3>
-											<span>Web Design</span>
-											<p class="icon">
-												<span><a href="#"><i class="icon-share3"></i></a></span>
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-												<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i
-											class="icon-reload"></i></a></p>
-							</div>
-						</div>
+						
 					</div>
 				</section>
 
@@ -904,53 +877,124 @@
 								<h2 class="colorlib-heading">Recent Blog</h2>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i
-													class="icon-bubble3"></i> 4</small></span>
-										<h3><a href="blog.html">Renovating National Gallery</a></h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-											large language ocean.</p>
+						<div class="owl-carousel owl-theme">
+							<div class="blog-entry item"
+								style="background-image: url('images/feedback/reviewbg3.png');">
+								<div class="feedback">
+									<div class="row">
+										<div class="col-md-1"></div>
+										<div class="col-md-10">
+											<p>Really good quality, excellent!</p>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<img src="images/Profile.JPG">
+										</div>
+										<div class="col-md-4"></div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i
-													class="icon-bubble3"></i> 4</small></span>
-										<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-											large language ocean.</p>
+							<div class="blog-entry item"
+								style="background-image: url('images/feedback/reviewbg3.png');">
+								<div class="feedback">
+									<div class="row">
+										<div class="col-md-1"></div>
+										<div class="col-md-10">
+											<p>Really good quality, excellent!</p>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<img src="images/Profile.JPG">
+										</div>
+										<div class="col-md-4"></div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i
-													class="icon-bubble3"></i> 4</small></span>
-										<h3><a href="blog.html">Make website from scratch</a></h3>
-										<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-											large language ocean.</p>
+							<div class="blog-entry item"
+								style="background-image: url('images/feedback/reviewbg3.png');">
+								<div class="feedback">
+									<div class="row">
+										<div class="col-md-1"></div>
+										<div class="col-md-10">
+											<p>Really good quality, excellent!</p>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<img src="images/Profile.JPG">
+										</div>
+										<div class="col-md-4"></div>
+									</div>
+								</div>
+							</div>
+							<div class="blog-entry item"
+								style="background-image: url('images/feedback/reviewbg3.png');">
+								<div class="feedback">
+									<div class="row">
+										<div class="col-md-1"></div>
+										<div class="col-md-10">
+											<p>Really good quality, excellent!</p>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<img src="images/Profile.JPG">
+										</div>
+										<div class="col-md-4"></div>
+									</div>
+								</div>
+							</div>
+							<div class="blog-entry item"
+								style="background-image: url('images/feedback/reviewbg3.png');">
+								<div class="feedback">
+									<div class="row">
+										<div class="col-md-1"></div>
+										<div class="col-md-10">
+											<p>Really good quality, excellent!</p>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<img src="images/Profile.JPG">
+										</div>
+										<div class="col-md-4"></div>
+									</div>
+								</div>
+							</div>
+							<div class="blog-entry item"
+								style="background-image: url('images/feedback/reviewbg3.png');">
+								<div class="feedback">
+									<div class="row">
+										<div class="col-md-1"></div>
+										<div class="col-md-10">
+											<p>Really good quality, excellent!</p>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<img src="images/akk2.jpg">
+										</div>
+										<div class="col-md-4"></div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i
-											class="icon-reload"></i></a></p>
-							</div>
-						</div>
+						
+						
 					</div>
 				</section>
 
@@ -1030,24 +1074,10 @@
 		</div><!-- end:container-wrap -->
 	</div><!-- end:colorlib-page -->
 
-	<script>
-		$(function () {
-			$(".box-hidden").slice(0, 3).show();
-			$("#loadMore").on('click', function (e) {
-				e.preventDefault();
-				$(".box-hidden:hidden").slice(0, 3).slideDown();
-				if ($(".box-hidden:hidden").length == 0) {
-					$("#load").fadeOut('slow');
-				}
-				$('html,body').animate({
-					scrollTop: $(this).offset().top
-				}, 1500);
-			});
-		});
-	</script>
+	
 
 	<!-- jQuery -->
-	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-3.4.1.min..js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
@@ -1058,12 +1088,19 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Owl carousel -->
 	<script src="js/owl.carousel.min.js"></script>
+	<!-- <script src="D:\Javascript\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js"></script> -->
+	<script src="js/owl.carousel.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
 
 
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+
+
+	<script src="js/myscript.js"></script>
+	<script src="js/workmodal.js"></script>
 
 </body>
 
