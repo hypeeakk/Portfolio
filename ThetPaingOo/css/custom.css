@@ -303,4 +303,8 @@ a.bck.active {
   }
 }
 
+.high{
+  min-height: 230px;
+}
+
 
